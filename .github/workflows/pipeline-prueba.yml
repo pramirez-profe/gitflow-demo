@@ -12,3 +12,6 @@ jobs:
         run: |
           echo "Este es el contenido del repositorio"
           tree
+      - name: Verifica variables
+        run: |
+          echo "El valor de la variable MI_VAR es $MI_VAR"
