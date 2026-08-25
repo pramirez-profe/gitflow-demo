@@ -1,0 +1,13 @@
+name: pipeline de pruebas
+on:
+  push:
+
+jobs:
+  prueba:
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Verifica contenido del repositorio
+        run: |
+          echo "Este es el contenido del repositorio"
+          tree
