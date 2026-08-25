@@ -28,3 +28,18 @@ jobs:
       - name: Verificar Java
         run: |
           java -version
+      - name: Instalar Node 24
+        uses: action/setup-node@v7
+        with:
+          node-version: '24'
+      - name: Instalar Java 24
+        uses: action/setup-java@v6
+        with:
+          java-version: '24'
+          distribution: temurin
+      - name: Verificar Node
+        run: |
+          node --version
+      - name: Verificar Java
+        run: |
+          java -version
