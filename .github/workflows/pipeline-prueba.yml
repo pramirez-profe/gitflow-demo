@@ -15,3 +15,6 @@ jobs:
       - name: Verifica variables
         run: |
           echo "El valor de la variable MI_VAR es ${{ vars.MI_VAR }}"
+      - name: Verifica secretos
+        run: |
+          echo "El valor del secreto MI_SECRETO es ${{ secrets.MI_SECRETO }}"
