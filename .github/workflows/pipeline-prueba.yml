@@ -14,4 +14,4 @@ jobs:
           tree
       - name: Verifica variables
         run: |
-          echo "El valor de la variable MI_VAR es $MI_VAR"
+          echo "El valor de la variable MI_VAR es ${{ vars.MI_VAR }}"
