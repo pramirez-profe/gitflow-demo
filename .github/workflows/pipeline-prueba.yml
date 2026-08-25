@@ -43,3 +43,10 @@ jobs:
       - name: Verificar Java
         run: |
           java -version
+  despliegue:
+    needs: instalacion
+    runs-on: ubuntu-latest
+    steps:
+      - name: despliegue simulado
+        run: |
+          echo "Aca se ejecutada el despliegue"
