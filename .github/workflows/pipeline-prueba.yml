@@ -18,3 +18,12 @@ jobs:
       - name: Verifica secretos
         run: |
           echo "El valor del secreto MI_SECRETO es ${{ secrets.MI_SECRETO }}"
+  instalacion:
+    runs-on: debian-latest
+    steps:
+      - name: Verificar Node
+        run: |
+          node --version
+      - name: Verificar Java
+        run: |
+          java -version
