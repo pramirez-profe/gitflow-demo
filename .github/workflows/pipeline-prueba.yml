@@ -19,7 +19,7 @@ jobs:
         run: |
           echo "El valor del secreto MI_SECRETO es ${{ secrets.MI_SECRETO }}"
   instalacion:
-    runs-on: debian-latest
+    runs-on: ubuntu-slim
     steps:
       - name: Verificar Node
         run: |
